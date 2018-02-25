@@ -1,0 +1,399 @@
+# Copy User Stories from the ProductBacklog 
+# to the appropriate Sprint below, after the 
+# Sprint Planning Meeting.
+
+# Sprint 1 October 23, 2017
+# Sprint 1 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1
+NAME     : Draw Circle
+OWNER    : Parth Champaneri
+PRIORITY : 1
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : To click the center of the circle, drag, and release to specify
+           a circle to be drawn in the current style.
+SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2
+NAME     : Draw Circle Feedback
+OWNER    : Parth Champaneri
+PRIORITY : 2
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           circle should be on display. As the user drags, the 'current'
+           circle changes in real time so that a circle is drawn with
+           centre at users initial circle click, with radius out to
+           the current dragged mouse position.
+SO THAT  : I can see the circle I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3 sainina4
+NAME     : Draw Rectangle
+OWNER    : Navdeep Saini
+PRIORITY : 3
+ESTIMATE : 3 hours
+AS A     : user
+I WANT   : To click on one corner of a rectangle, drag, and release to 
+		   specify two corners of a rectangle to be drawn in the current style.
+SO THAT  : I can add rectangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4 sainina4
+NAME     : Draw Rectangle Feedback
+OWNER    : Navdeep Saini
+PRIORITY : 4
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
+SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+TYPE     : BUG 1
+NAME     : Icons instead of text for drawing mode selection
+OWNER    : Parth Champaneri
+PRIORITY : 6
+ESTIMATE : 2 hours
+ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2
+NAME     : Drawing selection mode not indicated
+OWNER    : Harsha Payidiparty
+PRIORITY : 5
+ESTIMATE : 1 hour
+ISSUE    : Currently ,you can't tell which mode "Circle", "Rectangle", ...
+           is currently selected. Is JButton correct, is there a way
+           to highlight the currently selected mode?
+--------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+TYPE     : USER STORY 8 sainina4
+NAME     : Square
+OWNER    : Navdeep Saini
+PRIORITY : 8
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : To be able to select the Square button and drag and draw a square
+SO THAT  : I do not have to estimate with a rectangle and can accurately 
+			create squares to expand my arsenal of images.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5
+NAME     : Color selector
+OWNER    : Parth Champaneri
+PRIORITY : 5 
+ESTIMATE : 3 hours
+AS A     : user
+I WANT   : To be able to select the current drawing color, to be applied
+           to subsequent shapes. Example: 
+           		selects color red 
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select color green
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two red circles and a red rectangle as well as
+           	two green rectangles and a green squiggle
+SO THAT  : I can create more variety of images and patterns to 
+			increase my arsenal of creativity
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 6
+NAME     : Fill style selector
+OWNER    : Harsha Payidiparty
+PRIORITY : 6
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : To be able to select the current drawing style (filled or outline), to be applied
+           to subsequent shapes. Example: 
+           		selects fill style solid
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select fill style outline
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two solid circles and a solid rectangle as well as
+           	two outlined rectangles and a squiggle
+SO THAT  : I can create more diverse images and save time on manually filling in shapes
+			or outlining areas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8 sainina4
+NAME     : Square
+OWNER    : Navdeep Saini
+PRIORITY : 8
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : To be able to select the Square button and drag and draw a square
+SO THAT  : I do not have to estimate with a rectangle and can accurately 
+			create squares to expand my arsenal of images.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9
+NAME     : PolyLine
+OWNER    : Parth Champaneri
+PRIORITY : 9
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : create perfectly straight lines so i do not have to free hand them
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 7 sainina4
+NAME     : Track z order of shapes
+OWNER    : Navdeep
+PRIORITY : 7
+ESTIMATE : 1 hour
+ISSUE    : i appears on the screen need to get rid of it and track the z order
+			of the shapes.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 7
+NAME     : Line thickness selector
+OWNER    : Parth
+PRIORITY : 7
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : To be able to select the current line thickness, to be applied
+           to subsequent shapes. Example:
+           		select fill style outline 
+           		selects line thickness 1
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select line thickness 9
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two thinly outlined circles and a thinly outlined 
+           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+SO THAT  : I can create neater images instead of drawing a number of thiner
+			lines, I may draw 1 thick one which is much smoother
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 5
+NAME     : Squiggle is broken
+OWNER    : Harsha and Alex
+PRIORITY : 2
+ESTIMATE : 2 hours
+ISSUE    : Squiggles are connected to each other by a straight line. Each drag
+		   of the mouse should be a separate squiggle. Possibly
+           the issue is with the representation of the squiggles in the Model.
+--------------------------------------------------------------------------
+TYPE		 : Bug 7
+Name		 : Laggy redundant code
+OWNER	 : Alex
+PRIORITY : 13
+ESTIMATE : 1 hour
+ISSUE    : Dragging creates a new shape in model, even though it might be the same shape repeated multiple times
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9
+NAME     : PolyLine
+OWNER    : All (we did this together)
+PRIORITY : 9
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : create perfectly straight lines so i do not have to free hand them
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 11 sainina4
+NAME     : Fill
+OWNER    : Navdeep
+PRIORITY : 11
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : create already filled in shapes so i dont have to manually colour
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 10 sainina4
+NAME     : LineThicknessSelector Slider
+OWNER    : Navdeep
+PRIORITY : 10
+ESTIMATE : 1 hours
+AS A     : user
+I WANT   : easily change the thickness of my line
+--------------------------------------------------------------------------
+#END OF SPRINT 1
+
+# Sprint 2 November 5th, 2017
+# Sprint 2 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY 12 - UTORIDpeggalex
+NAME     : Fill
+OWNER    : Alex
+PRIORITY : 12
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : a color wheel for selecting color
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 13 - sainina4
+NAME     : Undo Redo
+OWNER    : Navdeep Saini
+PRIORITY : 13
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : to be able to undo and redo my last shapes
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2.1 : champan8
+NAME     : Implement Poly Line
+OWNER    : Parth Champaneri
+PRIORITY :14
+ESTIMATE : 4 hours
+ISSUE    : YOU FILL THIS ONE IN!!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2.1 : champan8
+NAME     : Architecture for drawing shapes can be improved
+OWNER    : Parth Champaneri
+PRIORITY : 16
+ESTIMATE : 2 hours
+ISSUE    : The architecture can be improved if we implement the Command Design 
+Pattern to draw shapes as follows:
+
+The PaintModel should use the command design pattern. 
+That is, each shape knows how to draw itself, so there is a single list of 
+DrawingCommands maintained by the PaintModel and used by the PaintPanel.
+paintComponent simply asks the PaintModel to ask command to execute(g2d).
+The simplest way to make this happen is to make each shape implement the 
+DrawingCommand interface which requires execute(g2d) to be implemented.
+Well sort of.
+
+NOTE: The PaintModel does know how to logically draw itself, so does
+know about strokes and pen colors etc. Depending on how much you want
+to split off the logical from the GUI, it may not have to know how to 
+draw on the screen. This is a subtle difference. For example, the
+following logically describes a scene, without actually knowing
+how to draw it on the screen (using j2d)...
+
+Color = green
+Fill = off
+Border = on
+BorderWidth = 10
+Circle radius 10 at 12,15
+Color = red
+Fill = on
+FillColor = black
+Border = on
+BorderWidth = 7
+Square width 20 at 100,200
+
+If you want to build a more 'logical' PaintModel, you can consider ...
+
+1) Create a mirror hierarchy for Shape, this mirror hirerachy 
+has things like DrawableCircle which has a Circle. The DrawableCircle
+knows how to draw the instance of Circle it holds. Each Shape will
+still need information about its color, and stroke, one way or another.
+
+OR
+
+2) Lookup and apply the Visitor design pattern to the more logical
+PaintModel.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2.2 : sainina4
+NAME     : Architecture for handling shape modifiers can be improved 
+OWNER    : Navdeep Saini
+PRIORITY : 17
+ESTIMATE : 3 hours
+ISSUE    : The architecture can be improved if we implement the Command Design 
+Pattern to handle changes to the graphics contex such as changing drawing 
+color, stroke width etc. You can accomplished this by wrapping the changes
+to the graphics context in a DrawingCommand. This way these changes can be
+added to the Bug 2.1 DrawingCommand list. That is, these new types of 
+DrawingCommands appear on PaintPanel's list right along side 
+the Shape type DrawingCommands.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2.3 : champan8
+NAME     : Architecture behind choosing drawing mode is poor
+OWNER    : Parth Champaneri
+PRIORITY : 18
+ESTIMATE : 2 hours
+ISSUE    : A better architecture behind selecting a drawing mode can be created 
+by implementing the Factory Design Pattern as follows:
+
+The factory design pattern should be used by the paint buttons. 
+The factory is responsible for creating different ShapeManipulatorStrategy 
+instances (see BUG 2.4). That is, when a button is pressed, the appropriate 
+ShapeManipulatorStrategy is created and installed in the PaintPanel. 
+Note that you can associate text with a button, even if you 
+display an ImageIcon. The string attached to the button causes the right choice 
+of object creation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2.4 : champan8
+NAME     : Architecture behind creating shape instances is poor
+OWNER    : Parth Champaneri 
+PRIORITY : 19
+ESTIMATE : 3 hours
+ISSUE    : A better architecture for creating shape instances so that it is 
+more flexible, and easier to work with can be created using the Strategy Design 
+pattern as follows:
+
+Create class/abstract class/interface  ShapeManipulatorStrategy as well 
+as subclasses/implementators for each type of Shape. Call these the
+concrete ShapeNamipulatorStrategies
+
+The concrete ShapeManipulatorStrategies are responsible for 
+
+1. Creating instances of Shape and putting them on top of 
+   the PaintModel command stack.
+
+2. Understanding how mouse events modify the shape at the top of the 
+   PaintModel command stack.
+
+3. Calling the PaintPanel repaint at appropriate times.
+
+This strategy can be put in place either by having PaintPanel's mouse 
+events forwarded through PaintPanel into the current strategy, or by 
+simply switching the PaintPanel's listeners as appropriate.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 17 UTORID: payidip1
+NAME     : Eraser 
+OWNER    : Harsha Payidiparty
+PRIORITY : 17
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : to be able to erase the drawing using a scribble type erase which is 
+		   always white and that I could set the thickness of the eraser.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 9 UTORID: payidip1
+NAME     : Labels for current color and thickness slider is missing on the GUI.
+OWNER    : Harsha Payidiparty
+PRIORITY : 18
+ESTIMATE : 1 hour
+ISSUE    : No labels on top of the current color and thickness slider. 
+		   more user friendly if there are clear labels on the GUI.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 10 UTORID: payidip1
+NAME     : JavaDoc and comments for ActionListeners.
+OWNER    : Harsha Payidiparty
+PRIORITY : 19
+ESTIMATE : 1 hour
+ISSUE    : No JavaDoc and Comments present for all ActionListeners
+--------------------------------------------------------------------------
